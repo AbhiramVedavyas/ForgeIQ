@@ -61,3 +61,42 @@ The Random Forest Classifier evaluates physical sensor inputs to predict breakdo
    ```bash
    git clone [https://github.com/YOUR_USERNAME/ForgeIQ.git](https://github.com/YOUR_USERNAME/ForgeIQ.git)
    cd ForgeIQ
+
+   Install Dependencies:
+
+Bash
+pip install pandas numpy sqlalchemy pymysql scikit-learn streamlit plotly
+Populate the Database:
+
+Bash
+python generate_operations.py
+python generate_supply_chain.py
+Launch the Web Dashboard:
+
+Bash
+streamlit run app.py
+
+---
+
+## 📤 Step 3: Push to GitHub
+
+1. Go to [GitHub](https://github.com/) and click the green **New** button to create a repository.
+2. Name it **`ForgeIQ`**, leave it public, and **do not** check "Add a README file" or "Add .gitignore" (since we just created them locally). Click **Create repository**.
+3. Open your PowerShell terminal (`C:\Users\tfbpt\OneDrive\Desktop\MDP`) and run these commands:
+
+```bash
+# Initialize git in your folder
+git init
+
+# Add all of your files to the staging area
+git add .
+
+# Commit your files
+git commit -m "Initial commit: ForgeIQ Smart Factory Platform"
+
+# Link your local folder to your online GitHub repository
+git branch -M main
+git remote add origin https://github.com/AbhiramVedavyas/ForgeIQ.git
+
+# Push the code!
+git push -u origin main
