@@ -1,0 +1,15 @@
+# Ignore local database configurations or files containing passwords
+*config*.py
+credentials.py
+
+# Ignore virtual environments
+venv/
+.env
+
+# Python caching
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
